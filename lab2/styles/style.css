@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    font-family: "Montserrat", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00f;
+}
+
+.sidebar {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    height: 70%;
+    width: 20%;
+}
+
+.sidebar-links {
+    list-style-type: none;
+    padding: 0;
+    font-size: 23px;
+}
+
+.sidebar-links li {
+    margin-bottom: 10px;
+}
+
+.sidebar-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar-links a:hover {
+    color: #00f;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 75%;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    height: 70%;
+    top:14%;
+    border: 1px solid #ccc;
+}
+
+.image-container {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left ul,
+.footer-center ul,
+.footer-right ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-left li,
+.footer-center li,
+.footer-right li {
+    margin-bottom: 10px;
+}
+
+.footer-left a,
+.footer-center a,
+.footer-right a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-left a:hover,
+.footer-center a:hover,
+.footer-right a:hover {
+    color: #00f;
+}
