@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aqua;
+    height: 5rem;
+    text-align: center;
+}
+
+.left-bar {
+
+}
+
+.center-bar {
+
+}
+
+.right-bar {
+
+}
+
+footer {
+
+}
+
+footer a {
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    color: brown;
+}
