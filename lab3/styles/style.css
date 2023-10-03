@@ -1,4 +1,3 @@
-/* Додайте ці стилі для нових посилань в хедері */
 html, body {
     margin: 0;
     padding: 0;
@@ -12,7 +11,8 @@ header {
     height: 10%;
     text-align: center;
     padding: 1%;
-    position: relative;
+    position: absolute;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,25 +51,31 @@ header nav ul li a:hover {
 }
 .image-container {
     position: relative;
-    overflow: hidden; /* Обмеження вмісту до розмірів контейнера */
+    overflow: hidden;
 }
 
 .image {
-    width: 100%; /* Зробити зображення шириною 100% від контейнера */
+    width: 100%;
     display: block;
     z-index: -1;
 }
 
 .image-content {
-    position: absolute; /* Позиціонуємо відносно батьківського контейнера */
-    top: 20%; /* Розмістити зверху контейнера */
-    left: 5%; /* Розмістити зліва контейнера */
-    padding: 20px; /* Відступи від тексту та кнопки */
-    color: white; /* Колір тексту */
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 20px;
+    color: white;
 }
 
 h1 {
-    margin: 0; /* Зняти зовнішні відступи тексту */
+    margin: 0;
+    font-size: 250%;
+}
+
+.image1 {
+    width: 90%;
+    margin: 10px;
 }
 
 .details {
@@ -78,28 +84,10 @@ h1 {
     background-color: #2a2a5d;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px; /* Відступ від тексту */
+    border-radius: 17px;
+    margin-top: 10px;
+    font-size: 120%
 }
-
-
-/*.content h1 {*/
-/*    margin-right: 35%;*/
-/*    margin-top: 10%;*/
-/*}*/
-
-/*.content button {*/
-/*    margin-top: 2%;*/
-/*    margin-right: 55%;*/
-/*    width: 13%;*/
-/*    height: 60px;*/
-/*    color: white;*/
-/*    border-radius: 40px;*/
-/*    font-size: 17px;*/
-/*    transition: background-color 5ms, color 5ms;*/
-/*    border: 2px solid white;*/
-/*    background-color: rgba(0, 0, 0, 0.1);*/
-/*}*/
 
 .image-container a:hover {
     background-color: #2a2a5d;
@@ -107,25 +95,158 @@ h1 {
     border: 2px solid #2a2a5d;
 }
 
-.welcome {
-    bottom: 20%;
-    text-align: center; /* Вирівнюємо текст по центру */
-    margin-top: 2%; /* Додали відступ від верхнього краю */
-    width: 100%; /* Розтягуємо на всю ширину батьківського контейнера */
-}
-
 h1 {
     color: white;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0); /* Змінюємо колір на прозорий */
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: left;
     padding: 1%;
     bottom: 0;
     width: 98%;
-    height: 10%;
     display: flex;
-    align-items: center; /* Вирівнюємо по центру по вертикалі */
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
 }
+
+
+.contact-info p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 28px;
+    color: #007bff;
+}
+.contact-info, .menu {
+    flex-basis: 50%;
+}
+.menu{
+    text-align: right;
+}
+
+.menu p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu a:first-child {
+    margin-left: 0;
+}
+
+.menu a:hover {
+    color: #555;
+}
+
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.image-wrapper {
+    flex: 1;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.text-container h2 {
+    font-size: 42px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    color: #2a2a5d;
+}
+
+.text-container p {
+    font-size: 24px;
+}
+
+.reserve {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a2a5d;
+    color: white;
+    text-decoration: none;
+    border-radius: 17px;
+    margin-top: 10px;
+    font-size: 120%
+}
+
+.text-container a:hover {
+    background-color: #2a2a5d;
+    transition: 1s;
+    border: 2px solid #2a2a5d;
+}
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.room-card {
+    width: calc(33.33% - 40px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin: 20px;
+}
+
+.room-card img {
+    max-width: 100%;
+    height: auto;
+    padding: 0 0 25px 0;
+}
+
+.room-card a {
+    padding: 30px;
+    text-align: left;
+    color: #222222;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Noto Serif";
+}
+
+.room-card a:hover {
+    color: #986948;
+    transition: 1s;
+}
+
+.room-card p {
+    color: #5d5959;
+    padding: 10px 0 0 30px;
+}
+
 
