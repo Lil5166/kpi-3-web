@@ -18,10 +18,12 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-body{
+
+body {
     background: url('../common/images/room7.jpg') no-repeat center center fixed;
     background-size: cover;
 }
+
 .icon {
     width: 10%;
     display: inline-block;
@@ -53,13 +55,14 @@ header nav ul li a:first-child {
 header nav ul li a:hover {
     color: #555;
 }
+
 .choose {
     pointer-events: none;
     color: #986948;
 }
 
 .container {
-    max-width: 400px;
+    width: 40%;
     margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
@@ -102,17 +105,57 @@ input[type="submit"]:hover {
 
 
 input[type="email"],
-input[type="password"]{
+input[type="password"] {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+
 input[type="email"],
-input[type="password"]{
+input[type="password"] {
     width: 93.5%;
 }
-.container a{
+
+.container a {
     text-decoration: none;
     color: black;
+}
+
+@media (max-device-width: 480px) {
+    header {
+        height: 5%;
+    }
+
+    header nav ul li a {
+        font-size: 40px;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+
+    label {
+        margin-bottom: 3px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 15px;
+    }
+
+    .container a {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 50px;
+    }
+
+    .container {
+        font-size: 45px;
+        width: 90%;
+    }
+
+    input {
+        font-size: 30px;
+    }
 }
