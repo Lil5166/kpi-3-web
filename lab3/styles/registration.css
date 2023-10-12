@@ -19,6 +19,11 @@ header {
     align-items: center;
 }
 
+body {
+    background: url('../common/images/room7.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
 .icon {
     width: 10%;
     display: inline-block;
@@ -50,7 +55,78 @@ header nav ul li a:first-child {
 header nav ul li a:hover {
     color: #555;
 }
+
 .choose {
     pointer-events: none;
     color: #986948;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+}
+
+input[type="submit"]:hover {
+    background: #555;
+}
+
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"],
+select,
+input[type="file"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"],
+input[type="file"] {
+    width: 93.5%;
+}
+select{
+    width: 100%;
+}
+.container a {
+    text-decoration: none;
+    color: black;
 }
