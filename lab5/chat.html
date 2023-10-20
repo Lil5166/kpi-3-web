@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Чат</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="chat" class="chat-container">
+    <div id="user1" class="user">
+        <h2>Повідомлення користувача 1</h2>
+        <label for="user1Message"></label><input type="text" id="user1Message" placeholder="Введіть повідомлення">
+        <button onclick="sendMessage(1)">Відправити</button>
+    </div>
+    <div id="chatWindow" class="chat-window">
+        <div id="chatMessages" class="chat-box"></div>
+    </div>
+    <div id="user2" class="user">
+        <h2>Повідомлення користувача 2</h2>
+        <label for="user2Message"></label><input type="text" id="user2Message" placeholder="Введіть повідомлення">
+        <button onclick="sendMessage(2)">Відправити</button>
+    </div>
+</div>
+
+<script>
+    function sendMessage(user) {
+        const messageInput = document.getElementById(`user${user}Message`);
+        const chatMessages = document.getElementById("chatMessages");
+        const messageText = messageInput.value;
+
+        if (messageText.trim() === "") {
+            return;
+        }
+
+        const messageElement = document.createElement("div");
+        messageElement.innerText = `User ${user}: ${messageText}`;
+        messageElement.className = `message user${user}`;
+        chatMessages.appendChild(messageElement);
+
+        messageInput.value = "";
+    }
+</script>
+</body>
+</html>
