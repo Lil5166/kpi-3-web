@@ -63,7 +63,6 @@ header nav ul li a:hover {
 
 .container {
     width: 40%;
-    margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -73,6 +72,7 @@ header nav ul li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(10px);
+    margin: 110px auto 0;
 }
 
 h2 {
@@ -123,26 +123,66 @@ input[type="date"],
 input[type="file"] {
     width: 93.5%;
 }
-select{
+
+select {
     width: 100%;
 }
+
 .container a {
     text-decoration: none;
     color: black;
+}
+
+.gender-container {
+    display: flex;
+    align-items: center;
+}
+
+.gender-container a {
+    margin-right: 20px;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+}
+
+.gender input[type="radio"] {
+    margin-right: 70px;
+}
+
+
+.error-message {
+    color: red;
+    display: none;
 }
 
 @media (max-device-width: 480px) {
     header {
         height: 5%;
     }
+
+    header nav ul li a {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-device-width: 480px) {
+    header {
+        height: 5%;
+    }
+
     header nav ul li a {
         font-size: 40px;
     }
+
     .container {
         width: 50%;
         top: 45%;
         font-size: 40px;
     }
+
     input {
         font-size: 30px;
     }
